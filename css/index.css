@@ -1,0 +1,72 @@
+header {
+    background-color: papayawhip;
+    grid-area: header;
+}
+
+section {
+    background-color: dodgerblue;
+}
+
+.tienda {
+    grid-area: tienda;
+    
+}
+.caja{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: solid 3px black;
+    
+}
+
+.servicios {
+    background-color: blueviolet;
+    grid-area: servicios;
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    justify-content: space-around;
+}
+
+nav {
+    background-color: green;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: nav;
+}
+
+aside {
+    background-color: gold;
+    grid-area: aside;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: 10vh 10vh auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "nav tienda aside"
+    "nav tienda aside"
+    "nav servicios aside"
+    "footer footer footer";
+
+    
+    
+}
+.navegador{
+    display: table-column;
+    align-content: space-around;
+    
+}
