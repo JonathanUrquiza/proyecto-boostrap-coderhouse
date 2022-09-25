@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 900px){
+    .contenedor{
+        display: flex;
+    }
+    
+}
+
+
+
+
