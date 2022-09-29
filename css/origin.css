@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 320px) {
+    .encabezado {
+        background-color: blue;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .logos {
+        background-color: rgb(255, 166, 0);
+
+        height: auto;
+        border: 3px solid black;
+
+    }
+
+    .titulo {
+        background-color: rgb(145, 255, 0);
+
+        border: 3px solid black;
+    }
+
+    .redes {
+        background-color: rgb(0, 132, 255);
+
+        border: 3px solid black;
+    }
+}
+
+@media (min-width: 320px) {
+    .encabezado {
+        background-color: red;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+    }
+
+    .logos {
+        background-color: rgb(255, 166, 0);
+        width: 100px;
+        border: 3px solid black;
+
+    }
+
+    .titulo {
+        background-color: rgb(145, 255, 0);
+        width: 100px;
+        border: 3px solid black;
+    }
+
+    .redes {
+        background-color: rgb(0, 132, 255);
+        width: 100px;
+        border: 3px solid black;
+    }
+
+    .cuerpo {
+        background-color: green;
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: stretch;
+
+
+
+
+    }
+
+    .publicidad {
+        background-color: rgb(119, 0, 255);
+        border: 3px solid black;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contenido {
+        background-color: blanchedalmond;
+        border: 3px solid black;
+        height: 100%;
+        width: 100%;
+    }
+
+    .promociones {
+        background-color: rgb(119, 0, 255);
+        border: 3px solid black;
+        height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        background-color: blue;
+        position: absolute;
+        bottom: 1;
+        width: 100%;
+        height: 20vh;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+    }
+
+    .marcas {
+        width: 100px;
+        border: 3px solid black;
+
+
+    }
+
+    .contactos {
+        width: 100px;
+        border: 3px solid black;
+    }
+
+    .sponsor {
+        width: 100px;
+        border: 3px solid black;
+    }
+
+}
+
+.navegador {
+    background-color: aqua;
+    height: 40px;
+    width: 100%;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+/* acá termina el encabezado*/
+
+
+
+@media (max-width: 320px) {
+
+    .cuerpo {
+        background-color: green;
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: stretch;
+
+
+
+
+    }
+
+    .publicidad {
+        background-color: rgb(119, 0, 255);
+        border: 3px solid black;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contenido {
+        background-color: blanchedalmond;
+        border: 3px solid black;
+        height: 100%;
+        width: 100%;
+    }
+
+    .promociones {
+        background-color: rgb(119, 0, 255);
+        border: 3px solid black;
+        height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        background-color: blue;
+        position: absolute;
+        bottom: 1;
+        width: 100%;
+        height: 20vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+
+    }
+
+    .marcas {
+
+        border: 3px solid black;
+
+
+    }
+
+    .contactos {
+
+        border: 3px solid black;
+    }
+
+    .sponsor {
+
+        border: 3px solid black;
+    }
+}
+
