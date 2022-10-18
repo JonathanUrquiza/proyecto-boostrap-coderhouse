@@ -5,8 +5,6 @@
     list-style: none;
 }
 
-
-
 @media (max-width: 767px) {
     .encabezado {
         background-color: blue;
@@ -23,7 +21,7 @@
     .encabezado__logos {
         background-color: rgb(255, 166, 0);
         width: 100%;
-
+        height: 40%;
         border: 3px solid black;
         display: flex;
         flex-direction: column;
@@ -33,13 +31,14 @@
     .encabezado__titulo {
         background-color: rgb(145, 255, 0);
         width: 100%;
-
+        height: 10%;
         border: 3px solid black;
     }
 
     .encabezado__redes {
         background-color: rgb(0, 132, 255);
         width: 100%;
+        height: 50%;
         border: 3px solid black;
         display: flex;
         flex-direction: row;
@@ -68,9 +67,9 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: stretch;
-        
-        
-        
+
+
+
 
 
 
@@ -135,74 +134,115 @@
     }
 }
 
+/* fin width 320px a 767px*/
 @media (min-width: 768px) {
     .encabezado {
+        border: 1px solid white;
         background-color: red;
         width: 100%;
-        height: 20vh;
+        height: 15vh;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: stretch;
+
+
 
     }
 
-    .logos {
-        background-color: rgb(255, 166, 0);
-        width: 100px;
-        border: 3px solid black;
+    .encabezado__logos {
+        border: 1px solid black;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
 
     }
 
-    .titulo {
-        background-color: rgb(145, 255, 0);
-        width: 100px;
-        border: 3px solid black;
+    .encabezado__titulo {
+        background-color: aqua;
+        border: 1px solid black;
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    .redes {
+    .encabezado__redes {
         background-color: rgb(0, 132, 255);
-        width: 100px;
-        border: 3px solid black;
+        height: 100%;
+        width: 20%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .redes__31 {
+        border: 1px solid white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .cuerpo {
         background-color: green;
-        height: 80vh;
         width: 100%;
+        height: 100vh;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        align-content: stretch;
+        align-items: flex-end;
+
 
 
 
 
     }
 
-    .publicidad {
+    .cuerpo__publicidad {
         background-color: rgb(119, 0, 255);
-        border: 3px solid black;
+        border: 1px solid black;
         height: 100%;
-        width: 100%;
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    .contenido {
+    .cuerpo__contenido {
         background-color: blanchedalmond;
-        border: 3px solid black;
+        border: 1px solid black;
         height: 100%;
-        width: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    .promociones {
+    .cuerpo__promociones {
         background-color: rgb(119, 0, 255);
-        border: 3px solid black;
+        border: 1px solid black;
         height: 100%;
-        width: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    footer {
+    .datos {
         background-color: blue;
         position: absolute;
         bottom: 1;
@@ -213,25 +253,59 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: stretch;
-
-    }
-
-    .marcas {
-        width: 100px;
-        border: 3px solid black;
 
 
     }
 
-    .contactos {
-        width: 100px;
-        border: 3px solid black;
+    .datos__marcas {
+        background-color: aqua;
+        border: 1px solid black;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
     }
 
-    .sponsor {
-        width: 100px;
-        border: 3px solid black;
+    .datos__contactos {
+        border: 1px solid black;
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .datos__sponsor {
+        border: 1px solid black;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+}
+
+
+
+
+@media (min-width : 769px) {
+    .encabezado {
+        background-color: red;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+
     }
 
 }
@@ -241,4 +315,9 @@
     height: 40px;
     width: 100%;
     border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
